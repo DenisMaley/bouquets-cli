@@ -11,7 +11,7 @@ But it can be easily changed/extended to/with other algorithms, depending on bus
 Python was used based on the this [ranking](https://www.slant.co/topics/2469/~best-languages-for-writing-command-line-utilities).
 ### Installation
 ```bash
-$ git clone
+$ git clone https://github.com/DenisMaley/bouquets-cli.git
 ```
 ```bash
 $ cd bouquets-cli
