@@ -8,7 +8,8 @@ the classical [Bin packing problem](https://en.wikipedia.org/wiki/Bin_packing_pr
 
 But it can be easily changed/extended to/with other algorithms, depending on business model.
 
-Python was used based on the this [ranking](https://www.slant.co/topics/2469/~best-languages-for-writing-command-line-utilities).
+Python was used based on the this [ranking](https://www.slant.co/topics/2469/~best-languages-for-writing-command-line-utilities) 
+and because there is a nice useful package ["click"](https://click.palletsprojects.com/en/7.x/) .
 ### Installation
 ```bash
 $ git clone https://github.com/DenisMaley/bouquets-cli.git
