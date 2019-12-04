@@ -8,7 +8,8 @@ class Bouquet:
         self.flowers = defaultdict(int)
 
     def add(self, flower):
-        self.flowers[flower.name] += 1
+        if flower.size == self.size:
+            self.flowers[flower.name] += 1
 
     def __repr__(self):
         flowers_spec = "".join(["".join([key, str(val)]) for key, val in sorted(self.flowers.items())])

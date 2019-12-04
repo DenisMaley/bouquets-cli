@@ -29,9 +29,13 @@ class TestBouquet(unittest.TestCase):
         self.bouquet.add(Flower('hL'))
         self.bouquet.add(Flower('bL'))
         self.bouquet.add(Flower('aL'))
+        self.bouquet.add(Flower('aS'))
         self.bouquet.add(Flower('hL'))
+        self.bouquet.add(Flower('hS'))
         self.bouquet.add(Flower('aL'))
         self.bouquet.add(Flower('aL'))
+        self.bouquet.add(Flower('tS'))
+        self.bouquet.add(Flower('qS'))
 
 if __name__ == '__main__':
     unittest.main()
