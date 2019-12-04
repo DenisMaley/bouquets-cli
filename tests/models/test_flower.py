@@ -22,7 +22,7 @@ class TestFlower(unittest.TestCase):
         self.assertIn('Wrong format of the flower:', cm.exception.message)
 
     def test_repr(self):
-        self.assertEqual(self.flower_spec, self.flower.__repr__())
+        self.assertEqual(self.flower_spec, repr(self.flower))
 
 
 if __name__ == '__main__':

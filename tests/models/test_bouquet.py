@@ -6,6 +6,7 @@ from src.models.flower import Flower
 
 class TestBouquet(unittest.TestCase):
     def setUp(self):
+        # TODO Replace with lists of different values and loop through
         self.bouquet_name = 'B'
         self.bouquet_size = 'L'
         self.bouquet = Bouquet(self.bouquet_name, self.bouquet_size)
@@ -23,9 +24,11 @@ class TestBouquet(unittest.TestCase):
     def test_repr(self):
         self.add_flowers()
         #Flowers should be in alphabetic order
-        self.assertEqual('BLa3b1h2', self.bouquet.__repr__())
+        self.assertEqual('BLa3b1h2', repr(self.bouquet))
 
     def add_flowers(self):
+        # TODO Replace with lists of different values and loop through
+        # TODO Also connect bouquet size, bouquet spec and flowers dict to these values
         # Flowers with wrong size will be ignored
         self.bouquet.add(Flower('hL'))
         self.bouquet.add(Flower('bL'))
