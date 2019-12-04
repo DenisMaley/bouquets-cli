@@ -1,9 +1,10 @@
 import unittest
+import tests.base
 
 from src.models.flower import Flower
 
 
-class TestFlower(unittest.TestCase):
+class TestFlower(tests.base.TestBase):
     def setUp(self):
         self.flower_name = 'a'
         self.flower_size = 'S'
