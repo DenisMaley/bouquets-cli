@@ -24,7 +24,7 @@ $ docker build -t bouquets .
 ### Usage
 Help
 ```bash
-$docker run --rm -it bouquets --help
+$ docker run --rm -it bouquets --help
 ```
 Input from input file
 ```bash
@@ -39,4 +39,9 @@ $ docker run --rm -it bouquets
 With capacity limit you algorithm will stop when the storage is full
 ```bash
 $ docker run --rm -it bouquets  --input_file input/input.txt --capacity 100 
+```
+### Tests
+To run all tests
+```bash
+$ python -m unittest discover -s tests
 ```
