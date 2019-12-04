@@ -26,12 +26,17 @@ class TestBouquet(unittest.TestCase):
         self.assertEqual('BLa3b1h2', self.bouquet.__repr__())
 
     def add_flowers(self):
+        # Flowers with wrong size will be ignored
         self.bouquet.add(Flower('hL'))
         self.bouquet.add(Flower('bL'))
         self.bouquet.add(Flower('aL'))
+        self.bouquet.add(Flower('aS'))
         self.bouquet.add(Flower('hL'))
+        self.bouquet.add(Flower('hS'))
         self.bouquet.add(Flower('aL'))
         self.bouquet.add(Flower('aL'))
+        self.bouquet.add(Flower('tS'))
+        self.bouquet.add(Flower('qS'))
 
 if __name__ == '__main__':
     unittest.main()
