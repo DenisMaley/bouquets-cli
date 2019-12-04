@@ -26,7 +26,7 @@ class Controller:
                     picker.handle(flower)
                     bouquet = picker.pick_up()
                     if bouquet:
-                        bouquets.append(bouquet.__repr__())
+                        bouquets.append(repr(bouquet))
                 except Exception as err:
                     print("Error: {} parsing flowers' input at {} position".format(err, i))
                     return

@@ -14,13 +14,13 @@ class Storage:
 
     def insert(self, flower):
         if self.full():
-            raise Exception('Storage is full, no room for the flower {}'.format(flower.__repr__()))
+            raise Exception('Storage is full, no room for the flower {}'.format(repr(flower)))
         self.stock[flower.size][flower.name] += 1
         self.tape.append(flower)
 
     def extract(self, flower):
         if self.stock[flower.size][flower.name] == 0:
-            raise Exception('The flower {} is out of stock'.format(flower.__repr__()))
+            raise Exception('The flower {} is out of stock'.format(repr(flower)))
         self.stock[flower.size][flower.name] -= 1
         flower_in_tape = next((x for x in self.tape if x.spec == flower.spec), None)
         index = self.tape.index(flower_in_tape)

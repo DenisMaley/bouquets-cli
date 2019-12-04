@@ -1,9 +1,10 @@
 import unittest
+import tests.base
 
 from src.models.flower import Flower
 
 
-class TestFlower(unittest.TestCase):
+class TestFlower(tests.base.TestBase):
     def setUp(self):
         self.flower_name = 'a'
         self.flower_size = 'S'
@@ -22,7 +23,7 @@ class TestFlower(unittest.TestCase):
         self.assertIn('Wrong format of the flower:', cm.exception.message)
 
     def test_repr(self):
-        self.assertEqual(self.flower_spec, self.flower.__repr__())
+        self.assertEqual(self.flower_spec, repr(self.flower))
 
 
 if __name__ == '__main__':
