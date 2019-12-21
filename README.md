@@ -31,12 +31,12 @@ Input from input file
 $ docker run --rm -it bouquets --input_file input/input.txt
 ```
 Without input file you have to provide a string divided by `\n` 
-An example you can see in input/simple_input_string.txt
+An example you can see in `input/simple_input_string.txt`
 And output will be shown in the console
 ```bash
 $ docker run --rm -it bouquets
 ```
-With capacity limit you algorithm will stop when the storage is full
+With capacity limit the algorithm will stop when the storage is full
 ```bash
 $ docker run --rm -it bouquets  --input_file input/input.txt --capacity 100 
 ```
